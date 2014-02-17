@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Something">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title id="ide">Thunder26 Website</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+
+<div id="Rec">
+  <h1>Ahmed Jadou</h1>
+  <h1>Ahmed Jadou</h1>
+  <h1>Ahmed Jadou</h1>
+</div>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<ol>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+  <li>Aliquam tincidunt mauris eu risus.</li>
+  <li>Vestibulum auctor dapibus neque.</li>
+</ol>
+
+        <script src="js/main.js"></script>
+        <script src="js/jquery-2.1.0.js"></script>
+
+        <script type="text/javascript">
+//Math()
+//String() = "";
+//Array() = [];
+//Date()
+//Object() = { key: value };
+          
+          var rec = document.getElementById("Rec");
+          rec.setAttribute("align","right");
+          var newHeading = document.createElement("h1");
+          newHeading.innerHTML="Dream About!";
+          var diver = rec.getElementsByTagName("h1")[2];
+          rec.insertBefore(newHeading,diver);
+
+          console.log(rec.innerHTML);
+
+
+        </script>
+    </body>
+</html>
